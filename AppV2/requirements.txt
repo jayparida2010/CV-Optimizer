@@ -1,0 +1,5 @@
+streamlit
+python-dotenv
+PyPDF2
+langchain  # If it's a custom package, you might need to specify a version or include it as a local package.
+python-docx
