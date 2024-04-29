@@ -1,6 +1,5 @@
 # Imports
 import streamlit as st
-from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
@@ -85,7 +84,6 @@ def handle_userinput(user_question):
 
 
 def main():
-    load_dotenv()
     st.set_page_config(page_title="Resume Optimizer", page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
 
